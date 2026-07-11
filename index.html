@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Help Organisation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf8f4;
+color:#333;
+}
+
+header{
+background:#ffffff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#0b6b41;
+}
+
+.logo span{
+color:#ff6a3d;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+color:#333;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff6a3d;
+}
+
+.hero{
+padding:70px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#ff6a3d;
+font-style:italic;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
+.orange{
+background:#ff6a3d;
+color:white;
+}
+
+.white{
+border:2px solid #333;
+color:#333;
+}
+
+.hero img{
+width:100%;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.stats{
+padding:40px 8%;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+text-align:center;
+}
+
+.stats h2{
+font-size:48px;
+color:#0b6b41;
+}
+
+.stats p{
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.about{
+padding:80px 8%;
+background:white;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about h2{
+font-size:42px;
+margin-bottom:20px;
+color:#0b6b41;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+}
+
+.chairman{
+padding:80px 8%;
+display:grid;
+grid-template-columns:280px 1fr;
+gap:60px;
+align-items:center;
+}
+
+.chairman img{
+width:260px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.chairman h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.info{
+font-size:18px;
+line-height:2;
+}
+
+.gallery{
+padding:80px 8%;
+background:#fff;
+}
+
+.gallery h2{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#0b6b41;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.grid img{
+width:100%;
+border-radius:18px;
+transition:.4s;
+}
+
+.grid img:hover{
+transform:scale(1.04);
+}
+
+.contact{
+padding:80px 8%;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+color:#0b6b41;
+}
+
+.contact p{
+font-size:18px;
+margin-bottom:15px;
+}
+
+footer{
+background:#0b6b41;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero,
+.about,
+.chairman{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.stats{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Help <span>Organisation</span>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#chairman">Chairman</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<p style="letter-spacing:2px;color:#777;">
+A NON-PROFIT SINCE 2010 • REG. NO. 1166
+</p>
+
+<h1>
+Every wheel we turn,<br>
+<span>turns a life.</span>
+</h1>
+
+<p>
+
+Help Organisation is a grassroots NGO from Rajmahal,
+Sahibganj, Jharkhand working since 2010 to provide
+mobility, dignity and opportunity to people living
+with disabilities.
+
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn orange">
+Become a Volunteer
+</a>
+
+<a href="#contact" class="btn white">
+Get in Touch
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<img src="distribution.jpg">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+
+<h2>1246+</h2>
+
+<p>Lives Touched</p>
+
+</div>
+
+<div>
+
+<h2>320+</h2>
+
+<p>Mobility Aids Distributed</p>
+
+</div>
+
+<div>
+
+<h2>16+</h2>
+
+<p>Years of Service</p>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<img src="distribution.jpg">
+
+<div>
+
+<h2>About Help Organisation</h2>
+
+<p>
+
+Help Organisation is a registered non-profit organisation
+(Reg. No. 1166) based in Rajmahal, Sahibganj,
+Jharkhand.
+
+Since 2010, the organisation has been working to
+support persons with disabilities through mobility
+assistance, awareness programmes and community support.
+
+Every wheelchair distributed brings greater independence,
+confidence and hope to individuals and families.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="chairman" id="chairman">
+
+<img src="chairman.jpg">
+
+<div>
+
+<h2>Chairman</h2>
+
+<div class="info">
+
+<b>Mohibur Shekh</b><br>
+
+Chairman<br><br>
+
+📞 7021979443<br>
+
+📍 Mahajan Tola,
+Rajmahal,
+Sahibganj,
+Jharkhand - 816108
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>Our Work</h2>
+
+<div class="grid">
+
+<img src="distribution.jpg">
+
+<img src="chairman.jpg">
+
+<img src="distribution.jpg">
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+
+<b>Help Organisation</b>
+
+</p>
+
+<p>
+
+Chairman: Mohibur Shekh
+
+</p>
+
+<p>
+
+Phone: 7021979443
+
+</p>
+
+<p>
+
+Mahajan Tola, Rajmahal,
+Sahibganj,
+Jharkhand - 816108
+
+</p>
+
+</section>
+
+<footer>
+
+© 2010–Present Help Organisation | Together We Change Lives
+
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Help Organisation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf8f4;
+color:#333;
+}
+
+header{
+background:#ffffff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#0b6b41;
+}
+
+.logo span{
+color:#ff6a3d;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+color:#333;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff6a3d;
+}
+
+.hero{
+padding:70px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#ff6a3d;
+font-style:italic;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
+.orange{
+background:#ff6a3d;
+color:white;
+}
+
+.white{
+border:2px solid #333;
+color:#333;
+}
+
+.hero img{
+width:100%;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.stats{
+padding:40px 8%;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+text-align:center;
+}
+
+.stats h2{
+font-size:48px;
+color:#0b6b41;
+}
+
+.stats p{
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.about{
+padding:80px 8%;
+background:white;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about h2{
+font-size:42px;
+margin-bottom:20px;
+color:#0b6b41;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+}
+
+.chairman{
+padding:80px 8%;
+display:grid;
+grid-template-columns:280px 1fr;
+gap:60px;
+align-items:center;
+}
+
+.chairman img{
+width:260px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.chairman h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.info{
+font-size:18px;
+line-height:2;
+}
+
+.gallery{
+padding:80px 8%;
+background:#fff;
+}
+
+.gallery h2{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#0b6b41;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.grid img{
+width:100%;
+border-radius:18px;
+transition:.4s;
+}
+
+.grid img:hover{
+transform:scale(1.04);
+}
+
+.contact{
+padding:80px 8%;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+color:#0b6b41;
+}
+
+.contact p{
+font-size:18px;
+margin-bottom:15px;
+}
+
+footer{
+background:#0b6b41;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero,
+.about,
+.chairman{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.stats{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Help <span>Organisation</span>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#chairman">Chairman</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<p style="letter-spacing:2px;color:#777;">
+A NON-PROFIT SINCE 2010 • REG. NO. 1166
+</p>
+
+<h1>
+Every wheel we turn,<br>
+<span>turns a life.</span>
+</h1>
+
+<p>
+
+Help Organisation is a grassroots NGO from Rajmahal,
+Sahibganj, Jharkhand working since 2010 to provide
+mobility, dignity and opportunity to people living
+with disabilities.
+
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn orange">
+Become a Volunteer
+</a>
+
+<a href="#contact" class="btn white">
+Get in Touch
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<img src="distribution.jpg">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+
+<h2>1246+</h2>
+
+<p>Lives Touched</p>
+
+</div>
+
+<div>
+
+<h2>320+</h2>
+
+<p>Mobility Aids Distributed</p>
+
+</div>
+
+<div>
+
+<h2>16+</h2>
+
+<p>Years of Service</p>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<img src="distribution.jpg">
+
+<div>
+
+<h2>About Help Organisation</h2>
+
+<p>
+
+Help Organisation is a registered non-profit organisation
+(Reg. No. 1166) based in Rajmahal, Sahibganj,
+Jharkhand.
+
+Since 2010, the organisation has been working to
+support persons with disabilities through mobility
+assistance, awareness programmes and community support.
+
+Every wheelchair distributed brings greater independence,
+confidence and hope to individuals and families.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="chairman" id="chairman">
+
+<img src="chairman.jpg">
+
+<div>
+
+<h2>Chairman</h2>
+
+<div class="info">
+
+<b>Mohibur Shekh</b><br>
+
+Chairman<br><br>
+
+📞 7021979443<br>
+
+📍 Mahajan Tola,
+Rajmahal,
+Sahibganj,
+Jharkhand - 816108
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>Our Work</h2>
+
+<div class="grid">
+
+<img src="distribution.jpg">
+
+<img src="chairman.jpg">
+
+<img src="distribution.jpg">
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+
+<b>Help Organisation</b>
+
+</p>
+
+<p>
+
+Chairman: Mohibur Shekh
+
+</p>
+
+<p>
+
+Phone: 7021979443
+
+</p>
+
+<p>
+
+Mahajan Tola, Rajmahal,
+Sahibganj,
+Jharkhand - 816108
+
+</p>
+
+</section>
+
+<footer>
+
+© 2010–Present Help Organisation | Together We Change Lives
+
+</footer>
+
+</body>
+</html>
